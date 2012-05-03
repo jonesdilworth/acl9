@@ -178,7 +178,7 @@ module Acl9
       end
 
       def role_objects
-        if self._auto_role_assoc==:role_objects
+        if self._auth_role_assoc==:role_objects
           super
         else
           send(self._auth_role_assoc)
